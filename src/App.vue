@@ -1,11 +1,20 @@
 <template>
   <div id="app">
-    <div>郝毅</div>
-    <div>你好</div>
-    <div>爱小芬</div>
+    <router-view/>
+    <mian-tab-bar/>
   </div>
 </template>
 
-<style>
+<script>
+import mianTabBar from 'components/content/mianTabBar'
+export default {
+  name:'App',
+  components:{
+    mianTabBar
+  }
+}
+</script>
 
+<style>
+  
 </style>
