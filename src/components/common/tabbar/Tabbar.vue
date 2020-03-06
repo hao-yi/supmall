@@ -19,5 +19,6 @@ export default {
     bottom:0;
     height:49px;
     background:#f1f1f1;
+    overflow:hidden;
   }
 </style>

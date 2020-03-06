@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view/>
+    <keep-alive exclude="Details">
+      <router-view/>
+    </keep-alive>
     <mian-tab-bar/>
   </div>
 </template>
@@ -16,5 +18,5 @@ export default {
 </script>
 
 <style>
-  
+
 </style>
