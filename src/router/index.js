@@ -6,8 +6,7 @@ const Home = () => import('views/home/Home.vue')
 const Category = () => import('views/category/Category.vue')
 const Cart = () => import('views/cart/Cart.vue')
 const My = () => import('views/my/My.vue')
-const Details = () => import('views/details/Details.vue')
-
+const Details = () => import('views/details/Details')
 const routes = [
   {
     path:'/',
@@ -37,7 +36,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   base: process.env.BASE_URL,
   routes
 })

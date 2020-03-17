@@ -137,6 +137,7 @@ export default {
       this.$refs.scroll.scrollTo(0,0)
     },
     conScroll(position){
+      //监听滚动的位置
       // this.isShow = -(position.y) > 1000
       if(-(position.y) > 1000){
         this.isShow = true
@@ -151,6 +152,7 @@ export default {
       }
     },
     pullingup(){
+      //监听是否滚动到底
       this.getHomeList(this.counter)
     }
   }

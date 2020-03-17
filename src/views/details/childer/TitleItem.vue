@@ -31,6 +31,7 @@ export default {
   methods:{
     titleClick(index){
       this.count = index
+      this.$emit('titleClick',index)
     },
     backClick(){
       // this.$router.go(-1)

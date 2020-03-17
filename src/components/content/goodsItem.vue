@@ -1,6 +1,6 @@
 <template>
   <div class="goods-item" @click="clickItem">
-    <img :src="itemList.show.img" alt="" @load="imgLoad">
+    <img v-lazy="itemList.show.img" alt="" @load="imgLoad">
     <div class="goods-items">
       <p class="title">{{itemList.title}}</p>
       <span class="price">{{'￥'+ itemList.price}}</span>
@@ -37,7 +37,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .goods-item{
     width:48%;
     font-size:5px;
